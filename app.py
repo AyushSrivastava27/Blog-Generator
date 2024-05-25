@@ -3,7 +3,6 @@ from langchain.prompts import PromptTemplate
 from langchain.llms import CTransformers
 
 ## Function To get response from LLAma 2 model
-
 def getLLamaresponse(input_text,no_words,blog_style):
 
     ### LLama2 model
@@ -13,7 +12,6 @@ def getLLamaresponse(input_text,no_words,blog_style):
                               'temperature':0.01})
     
     ## Prompt Template
-
     template="""
         Write a blog for {blog_style} job profile for a topic {input_text}
         within {no_words} words.
